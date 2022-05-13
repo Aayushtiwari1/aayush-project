@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FBB49C5-5408-4A53-960A-58C38E5EDDB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sign_up</RootNamespace>
+    <AssemblyName>sign_up</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="edit_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_form.Designer.cs">
+      <DependentUpon>edit_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_dataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_dataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_dataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_dataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_dataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_dataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_dataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_dataDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_dataDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_dataDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employee_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_home.Designer.cs">
+      <DependentUpon>employee_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_login.Designer.cs">
+      <DependentUpon>employee_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense_Form.Designer.cs">
+      <DependentUpon>Expense_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finance_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finance_home.Designer.cs">
+      <DependentUpon>finance_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finance_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finance_login.Designer.cs">
+      <DependentUpon>finance_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finance_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finance_view.Designer.cs">
+      <DependentUpon>finance_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_home.Designer.cs">
+      <DependentUpon>login_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_page.Designer.cs">
+      <DependentUpon>main_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="show_emp_expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_emp_expense.Designer.cs">
+      <DependentUpon>show_emp_expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign_up_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign_up_page.Designer.cs">
+      <DependentUpon>sign_up_page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="edit_form.resx">
+      <DependentUpon>edit_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_home.resx">
+      <DependentUpon>employee_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_login.resx">
+      <DependentUpon>employee_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense_Form.resx">
+      <DependentUpon>Expense_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finance_home.resx">
+      <DependentUpon>finance_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finance_login.resx">
+      <DependentUpon>finance_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finance_view.resx">
+      <DependentUpon>finance_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_home.resx">
+      <DependentUpon>login_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_page.resx">
+      <DependentUpon>main_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="show_emp_expense.resx">
+      <DependentUpon>show_emp_expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign_up_page.resx">
+      <DependentUpon>sign_up_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Employee_dataDataSet.xsc">
+      <DependentUpon>Employee_dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_dataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employee_dataDataSet.xss">
+      <DependentUpon>Employee_dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet1.xsc">
+      <DependentUpon>Employee_dataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_dataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employee_dataDataSet1.xss">
+      <DependentUpon>Employee_dataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet2.xsc">
+      <DependentUpon>Employee_dataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_dataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employee_dataDataSet2.xss">
+      <DependentUpon>Employee_dataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet3.xsc">
+      <DependentUpon>Employee_dataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_dataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employee_dataDataSet3.xss">
+      <DependentUpon>Employee_dataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet4.xsc">
+      <DependentUpon>Employee_dataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_dataDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_dataDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employee_dataDataSet4.xss">
+      <DependentUpon>Employee_dataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Employee_data.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Employee_data_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Employee_data.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
